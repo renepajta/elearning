@@ -2,18 +2,22 @@
 
 body {
     margin:0;
-    font-family:'Roboto', sans-serif;
+    font-family:'Montserrat', sans-serif;
     font-weight:400;
     color:#333;
 }
 
 a {
-    color:#3fad37;
+    color:#ad895e;
     text-decoration:none;
 }
 
+a:hover {
+   color:#003563;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family:'Roboto', sans-serif;
+    font-family:'Montserrat', sans-serif;
     font-weight:300;
 }
 
@@ -28,18 +32,24 @@ h1 {
 
 .module {
     overflow:auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
 .module h3 {
     margin:30px 0 0;
     padding:0;
-    width:100%;
+    width:70%;
 }
 
 .module p {
     margin:10px 0 20px;
-    width:100%;
+    width:70%;
     float:left;
+}
+.module{
+margin-right:0px;
 }
 
 #header {
@@ -81,10 +91,15 @@ padding-right:20px;
     width:20%;
     padding:10px;
     float:left;
-    background:#003563;
+/*    background:#003563; */
+    background: #cbbcbb;
     color: #fff;
     font-family:'Roboto', sans-serif;
     border-top: 2px solid #AD895E;
+}
+
+.contents h3 {
+color: #003563;
 }
 
 .contents ul {
@@ -104,20 +119,19 @@ padding-right:20px;
 }
 
 .contents ul li:hover {
-    background:black;
+    background:#003563;
     cursor:move;
 }
 
-
 .contents ul span {
     text-transform:uppercase;
-    color:#bbb;
+    color:white;
     font-size:14px;
 }
 
 .contents ul a {
     display:block;
-    color:#fff;
+    color:#003563;
     text-decoration:none;
 }
 
@@ -178,7 +192,7 @@ select {
 
 input[type=submit], a.button {
     border-radius:5px;
-    background:#4dcc43;
+    background:#AD895E;
     color:#fff;
     font-size:16px;
     text-transform:uppercase;
@@ -194,7 +208,7 @@ a.secondary-button {
 }
 
 input[type=submit]:hover {
-    background:#3fad37;
+    background:#003563;
 }
 
 ul#course-modules {
