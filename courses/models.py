@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from ckeditor.fields import RichTextField
 from django.contrib.auth.models import User
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
@@ -89,7 +90,7 @@ class ItemBase(models.Model):
 
 
 class Text(ItemBase):
-    content = models.TextField(default='Description')
+    content = RichTextField()
 
 
 class File(ItemBase):
@@ -101,4 +102,5 @@ class Image(ItemBase):
 
 
 class Video(ItemBase):
-    file = models.FileField(upload_to='videos')
+    file = models.FileField(upload_to='videos', blank=True, null=True)
+    url = models.URLField(default='', blank=True)
