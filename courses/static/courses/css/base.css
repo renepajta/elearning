@@ -70,6 +70,10 @@ color: #fff !important;
     margin: 0px 0px 0px 50px;
 }
 
+#header ul li{
+    display: inline;
+}
+
 #header a {
     color:#fff;
 }

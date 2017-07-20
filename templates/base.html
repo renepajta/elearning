@@ -12,10 +12,12 @@
 <div id="header">
     <a href="/" class="logo">Datavard</a>
     <ul class="menu">
+        <li><a href="{% url 'courses:manage_course_list' %}">Manage</a></li>
+        <li><a href="{% url 'students:student_course_list' %}">My Courses</a></li>
         {% if request.user.is_authenticated %}
-        <li><a href="{% url 'logout' %}" class="register">Sign out</a></li>
+        <li class="register"><a href="{% url 'logout' %}">Sign out</a></li>
         {% else %}
-        <li><a href="{% url 'login' %}" class="register">Sign in</a></li>
+        <li class="register"><a href="{% url 'login' %}">Sign in</a></li>
         {% endif %}
     </ul>
 </div>
