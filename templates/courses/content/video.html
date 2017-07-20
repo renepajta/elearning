@@ -1,2 +1,4 @@
-{% load embed_video_tags %}
-{% video item.url 'small' %}
+ <video width="640" height="480" controls>
+  <source src="{{ item.file.url }}" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
